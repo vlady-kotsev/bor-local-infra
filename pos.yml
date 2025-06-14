@@ -1,0 +1,6 @@
+polygon_pos_package:
+  participants:
+    - kind: validator
+      count: 2
+    - kind: rpc
+      count: 1

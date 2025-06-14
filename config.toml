@@ -1,0 +1,40 @@
+identity = "l2-el-4-bor-heimdall-archive"
+chain = "bor/genesis.json"
+datadir = "bor/data"
+verbosity = 5
+syncmode = "full"
+gcmode = "archive"
+
+[state]
+scheme = "hash"
+
+[p2p]
+maxpeers = 200
+bind = "0.0.0.0"
+port = 30303
+nodiscover = true
+
+[p2p.discovery]
+static-nodes = []
+
+[heimdall]
+url = ""
+
+[jsonrpc.http]
+enabled = true
+host = "0.0.0.0"
+port = 8545
+api = ["admin", "eth", "net", "web3", "txpool", "bor"]
+vhosts = ["*"]
+corsdomain = ["*"]
+
+[jsonrpc.ws]
+enabled = true
+host = "0.0.0.0"
+port = 8546
+api = ["admin", "eth", "net", "web3", "txpool", "bor"]
+origins = ["*"]
+
+[telemetry]
+metrics = true
+prometheus-addr = "0.0.0.0:7071"
