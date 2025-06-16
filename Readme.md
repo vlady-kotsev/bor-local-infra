@@ -42,6 +42,8 @@ sudo apt-get install yq jq
 
 ### Start the Environment
 
+Note: If yq fails replace `-y --in-place` with `-e`
+
 To start the complete environment with default settings (2 validators) and blockscout connected to local bor:
 
 ```bash
