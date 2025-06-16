@@ -15,11 +15,7 @@ This repository contains a local development environment for Polygon PoS (Proof 
 1. Install Just:
 
 ```bash
-# macOS
 brew install just
-
-# Linux
-curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash
 ```
 
 2. Install Kurtosis:
@@ -31,18 +27,12 @@ curl -fsSL https://raw.githubusercontent.com/kurtosis-tech/kurtosis/main/install
 3. Install yq and jq:
 
 ```bash
-# macOS
-brew install yq jq
-
-# Linux
-sudo apt-get install yq jq
+brew install python-yq jq
 ```
 
 ## Usage
 
 ### Start the Environment
-
-Note: If yq fails replace `-y --in-place` with `-e`
 
 To start the complete environment with default settings (2 validators) and blockscout connected to local bor:
 
